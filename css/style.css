@@ -49,9 +49,7 @@ nav a {
   padding: 4px;
 }
  nav a:hover{
-  background-color: #8da2bc;
-  color: blue;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 img {
@@ -73,6 +71,9 @@ h3{
 }
 .message a{
   color: #ccc;
+}
+.message a:hover{
+  color: #blue;
 }
  #skills ul{
   padding-top: 0;
