@@ -4,6 +4,25 @@ body{
   font-family: 'Cormorant Garamond', serif;
   font-size: 18px;
 }
+body a{
+  text-decoration: underline;
+  color: #222;
+}
+body a:hover{
+  text-decoration: underline;
+  color: blue;
+}
+body a:active{
+  text-decoration: none;
+  color: #fff;
+}
+body a:visited{
+  text-decoration: underline;
+  color: red;
+}
+.message a{
+  color:blue;
+}
 h1{
   font-size: 65px;
   font-family: 'Parisienne', cursive;
@@ -29,12 +48,6 @@ nav li{
   padding: 4px;
   text-decoration: none;
 }
-nav a:hover{
-  text-decoration: underline;
-}
-nav a:visited::after{
-
-}
 img {
    border:5px solid #021a40;
    border-radius: 50%;
@@ -47,7 +60,10 @@ h2{
 h3{
   margin: 0;
 }
-
+ #skills ul{
+  padding-top: 0;
+  margin-top: 0;
+ }
 #edu p{
   margin: 0;
 }
@@ -110,7 +126,7 @@ h3{
   border:5px dotted #1D9A6C;
   grid-area: leader;
   grid-column-start: 2;
-  grid-column-end: -1;
+  grid-column-end: span 1;
 }
 
 #skills{
