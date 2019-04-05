@@ -75,6 +75,10 @@ h3{
 .message a:hover{
   color: blue;
 }
+.main{
+  grid-area: main;
+  display: grid;
+}
  #skills ul{
   padding-top: 0;
   margin-top: 0;
@@ -111,7 +115,7 @@ h3{
   grid-column-end: -1;
 }
 
-#edu{
+#grid > main{
   padding: 20px;
   grid-area: edu;
   grid-column-start: 2;
