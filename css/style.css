@@ -4,7 +4,7 @@
 margin-top: 50px;
 max-width: 960px;
 max-height: 1024px;
-margin: 0 auto;
+margin: 100px auto;
 }
 #bio{
     grid-area: bio;
@@ -136,6 +136,7 @@ nav li a:active {
   font-weight: bold;
   text-align: center;
   color: #fff;
+  z-index: 0;
 }
 #name{
   display: flex;
