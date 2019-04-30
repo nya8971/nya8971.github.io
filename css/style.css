@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Unicase|PT+Serif|Roboto+Slab');
 /* general */
 body{
+  background-color: #000;
+  color: #eee;
   margin: 0;
   padding: 0;
   font-family: "Roboto Slab";
+}
+
+#cm{
+background: black url("../img/originals/img_0934 copy.jpg");
+background-attachment: fixed;
+background-size: auto;
+background-position: center -250px;
+/* background-position-y:-250px; */
+background-repeat: no-repeat;
 }
 
 h1{
@@ -86,7 +97,8 @@ max-width: 960px;
 margin: 100px auto;
 }
 #wrapper-shop a{
-  color:black;
+
+  color:#fff;
   transition: all 1.5s;
 }
 #wrapper-shop a:hover{
@@ -98,16 +110,20 @@ margin: 100px auto;
 h2{
   padding: 10px;
 }
-#music i{
-  color:black;
-  transition: all 1.5s;
+#music a i{
+  padding: 15px;
+  color: #fff;
+  transition: all 0.5s linear;
 }
-#music i:hover{
-  color:red;
-}
-#music a:visited .fab{
+
+#music a:visited i {
   color:rgb(73, 75, 79);
 }
+
+#music a:hover i {
+  color:red;
+}
+
 /* index */
 #name-id{
   font-size: 100px;
@@ -124,7 +140,7 @@ h2{
   display: flex;
   align-items: center;
   justify-content: center;
-position: relative;
+  position: relative;
 }
 #dirt-road{
   display: block;
@@ -135,6 +151,7 @@ position: relative;
 /* bio */
 #bio{
     grid-area: bio;
+    margin-top:0;
 }
 #window-photo{
   grid-area: window-photo;
@@ -152,13 +169,31 @@ position: relative;
   grid-template-columns: 50% 50%;
   grid-gap: 20px;
   grid-template-areas:
-  "new-releases new-releases"
+  "music-title music-title"
   "shine shine-des"
   "woo woo-des"
   "no no-des"
-  "music music"
+}
+
+.music-grid h2 {
+  grid-area: music-title;
+}
+
+.music-grid h3 {
+  margin-top: 0;
+}
+
+#new-releases {
+  grid-area: new-releases;
+}
+#new-releases img{
+  display: block;
+  margin: 5px auto;
 }
 iframe{
   padding-bottom: 10px;
   align-items: center;
+}
+.shine-art{
+  display: block;
 }
