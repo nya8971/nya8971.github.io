@@ -13,7 +13,6 @@ background: black url("../img/originals/img_0934 copy.jpg");
 background-attachment: fixed;
 background-size: auto;
 background-position: center -250px;
-/* background-position-y:-250px; */
 background-repeat: no-repeat;
 }
 
@@ -21,9 +20,7 @@ h1{
   font-size: 30px;
   font-family: 'PT Serif', serif;
 }
-/* p{
-  font-size: 20px;
-} */
+
 nav{
   position: fixed;
   width: 100%;
