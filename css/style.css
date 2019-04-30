@@ -1,57 +1,51 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Unicase|PT+Serif|Roboto+Slab');
-
-#wrapper{
-margin-top: 50px;
-max-width: 960px;
-max-height: 1024px;
-margin: 100px auto;
-}
-#bio{
-    grid-area: bio;
-}
-#window-photo{
-  grid-area: window-photo;
-}
-.bio-grid{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-gap: 20px;
-  grid-template-areas:
-  "bio window-photo"
-
-}
-iframe{
-  align-items: center;
-}
-
-#dirt-road{
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding-bottom: 6px;
-}
+/* general */
 body{
   margin: 0;
   padding: 0;
   font-family: "Roboto Slab";
 }
+
 h1{
+  font-size: 30px;
   font-family: 'PT Serif', serif;
 }
-
-/* header{
-  background-size:cover;
-  height: 100vh;
+/* p{
+  font-size: 20px;
 } */
-
 nav{
   position: fixed;
   width: 100%;
   top:0;
   height: auto;
-  /* line-height: 60px; */
   background-color:black;
   padding: 3px;
+}
+nav ul {
+  list-style-type: none;
+  padding-left: none;
+  text-align: right;
+}
+nav li {
+  display: inline-block;
+  margin-right: 40px;
+  margin-top: 15px;
+}
+nav a {
+  padding: 15px;
+  text-decoration: none;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 20px;
+}
+nav li a:hover {
+  background-color:rgb(73, 75, 79);
+}
+
+nav li a:active {
+  background-color:rgb(73, 75, 79,0.5);
 }
 footer {
   list-style-type: none;
@@ -69,14 +63,12 @@ footer {
 footer ul{
   margin:auto;
 }
-
 footer ul li {
   float: left;
   list-style-type: none;
   margin-left: 15px;
   margin-right: 15px;
 }
-
 footer ul li a {
   display:inline-block;
   color: #fff;
@@ -84,48 +76,39 @@ footer ul li a {
   padding:15px;
   text-decoration: none;
 }
-
-nav ul {
-  list-style-type: none;
-  padding-left: none;
-  text-align: right;
-}
-
-nav li {
-  display: inline-block;
-  margin-right: 40px;
-  margin-top: 15px;
-
-}
-
-nav a {
-  /* display: inline-block; */
-  padding: 5px;
-  text-decoration: none;
-}
-
-nav ul li a{
-    color: #fff;
-    font-size: 20px;
-}
-nav li a:hover {
-  background-color:rgb(73, 75, 79);
-  padding: 15px;
-}
-
-nav li a:active {
-  background-color:rgb(73, 75, 79,0.5);
-}
-.logo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 .logo-white{
   height: 48px;
   float: left;
   margin: 16px 48px;
 }
+#wrapper, #wrapper-shop{
+max-width: 960px;
+margin: 100px auto;
+}
+#wrapper-shop a{
+  color:black;
+  transition: all 1.5s;
+}
+#wrapper-shop a:hover{
+    color:red;
+}
+#wrapper-shop a:visited .fab{
+    color:rgb(73, 75, 79);
+}
+h2{
+  padding: 10px;
+}
+#music i{
+  color:black;
+  transition: all 1.5s;
+}
+#music i:hover{
+  color:red;
+}
+#music a:visited .fab{
+  color:rgb(73, 75, 79);
+}
+/* index */
 #name-id{
   font-size: 100px;
   text-decoration: none;
@@ -136,10 +119,46 @@ nav li a:active {
   font-weight: bold;
   text-align: center;
   color: #fff;
-  z-index: 0;
 }
 #name{
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
+position: relative;
+}
+#dirt-road{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 6px;
+}
+/* bio */
+#bio{
+    grid-area: bio;
+}
+#window-photo{
+  grid-area: window-photo;
+}
+.bio-grid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+  grid-template-areas:
+  "bio window-photo"
+}
+/* music */
+.music-grid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+  grid-template-areas:
+  "new-releases new-releases"
+  "shine shine-des"
+  "woo woo-des"
+  "no no-des"
+  "music music"
+}
+iframe{
+  padding-bottom: 10px;
+  align-items: center;
 }
