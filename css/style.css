@@ -109,15 +109,17 @@ h2{
 }
 #music a i{
   padding: 15px;
+}
+#music a i, #new-releases a{
   color: #fff;
   transition: all 0.5s linear;
 }
 
-#music a:visited i {
+#music a:visited i , #new-releases a{
   color:rgb(73, 75, 79);
 }
 
-#music a:hover i {
+#music a:hover i , #new-releases a{
   color:red;
 }
 
