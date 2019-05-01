@@ -182,11 +182,13 @@ h2{
 
 #new-releases {
   grid-area: new-releases;
+  text-align: center;
 }
 #new-releases img{
   display: block;
   margin: 5px auto;
 }
+
 iframe{
   padding-bottom: 10px;
   align-items: center;
