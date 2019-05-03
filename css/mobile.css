@@ -1,0 +1,68 @@
+@media(max-width: 414px) {
+  nav ul {
+    display: block;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  nav li {
+    display: block;
+    margin:auto;
+  }
+
+  nav a {
+    display: inline-block;
+    padding: 5px;
+    max-width: 100%;
+    margin-left: 0;
+  }
+#name{
+  visibility: hidden;
+}
+#cm{
+  background-size: cover;
+  background-position:-150px 110px;
+}
+.logo-white{
+  display: block;
+  margin: 5px auto;
+  padding-left: 75px;
+  width:200px;
+  height:40px;
+}
+#window-photo{
+  display: block;
+  /* padding-left: 10px; */
+  margin: 5px auto;
+  width:300px;
+  height:400px;
+}
+#bio,#wrapper-music,#wrapper-shop{
+  padding: 10px;
+}
+#wrapper-bio,#wrapper-shop,#wrapper-music{
+  margin-top: 210px;
+}
+.bio-grid{
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "window-photo"
+  "bio"
+  }
+.music-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "music-title"
+  "shine"
+  "shine-des"
+  "woo"
+  "woo-des"
+  "no"
+  "no-des"
+  }
+iframe{
+  width:365px;
+  height:205.3125px;
+}

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Unicase|PT+Serif|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif|Roboto+Slab');
 /* general */
 body{
   background-color: #000;
@@ -89,7 +89,7 @@ footer ul li a {
   float: left;
   margin: 16px 48px;
 }
-#wrapper, #wrapper-shop{
+#wrapper-music,#wrapper-bio, #wrapper-shop{
 max-width: 960px;
 margin: 100px auto;
 }
@@ -166,7 +166,7 @@ h2{
 .music-grid{
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-gap: 20px;
+  grid-gap: 50px;
   grid-template-areas:
   "music-title music-title"
   "shine shine-des"
