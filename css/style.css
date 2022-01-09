@@ -157,11 +157,8 @@ h2{
   grid-area: window-photo;
 }
 .bio-grid{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-gap: 20px;
-  grid-template-areas:
-  "bio window-photo"
+    background-image: url("img/stoop-bio-image.jpg");
+    background-position: 50% 20%;
 }
 /* music */
 .music-grid{
